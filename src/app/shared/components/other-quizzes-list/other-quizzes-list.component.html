@@ -1,0 +1,9 @@
+
+<div class="container__menu-bar">
+  <ul>
+    <ng-template ngFor let-item [ngForOf]="otherQuizzesTitles">
+      <li (click)="onClick(item.id)">{{item.title}}</li>
+    </ng-template>
+  </ul>
+</div>
+

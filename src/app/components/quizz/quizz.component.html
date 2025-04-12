@@ -1,5 +1,5 @@
 <div class="quizz__container">
-  <app-quizz-header [title]="title"></app-quizz-header>
+  <app-quizz-header [title]="quiz.title" [otherQuizzesTitles]="otherQuizzesTitles" (playQuizIndex)="onClick($event)"></app-quizz-header>
 
   <div *ngIf="finished; else elseBlock">
     <app-quizz-results
@@ -7,12 +7,15 @@
     ></app-quizz-results>
   </div>
   <ng-template #elseBlock>
+
     <app-quizz-questions
-      [question]="questionSelected.question"
+      *ngIf="quiz?.questions?.length"
+      [question]="quiz.questions[questionIndex].question"
     ></app-quizz-questions>
 
     <app-quizz-options
-      [quizzOptions]="questionSelected.options"
+      *ngIf="quiz?.questions?.length"
+      [quizzOptions]="quiz.questions[questionIndex].options"
       (quizzAnswer)="onAnswerSelected($event)"
     ></app-quizz-options>
   </ng-template>

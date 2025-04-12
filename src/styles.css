@@ -8,7 +8,23 @@
 }
 
 body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Garante que o corpo ocupe toda a altura da janela */
+  margin: 0;
+
   background-color: #1F1147;
   font-family: 'Roboto', sans-serif; /* Fonte moderna */
   line-height: 1.6; /* Espaçamento entre linhas */
+}
+
+.content {
+  flex: 1; /* Faz o conteúdo ocupar o espaço restante */
+}
+
+.footer {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
 }

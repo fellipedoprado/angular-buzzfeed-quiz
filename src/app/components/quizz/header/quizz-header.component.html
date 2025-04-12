@@ -1,4 +1,12 @@
-<div class="quizz_logo">
+<div class="quizz-header__container">
   <img src="assets/imgs/logo.png" alt="" srcset="" />
-  <h3>{{ title }}</h3>
+
+  <app-other-quizzes-list
+    [otherQuizzesTitles]="otherQuizzesTitles"
+    (playQuizIndex)="onClick($event)"
+  ></app-other-quizzes-list>
+
+  <h2 class="quizz-header__title">{{ title }}</h2>
 </div>
+
+

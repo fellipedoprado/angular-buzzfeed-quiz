@@ -1,11 +1,11 @@
-.quizz_logo {
+.quizz-header__container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 40px;
 }
 
-.quizz_logo > h3 {
-  margin-top: 20px;
+.quizz-header__title {
+  font-size: 35px;
 }

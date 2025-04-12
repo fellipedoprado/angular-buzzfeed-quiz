@@ -1,76 +1,73 @@
 import { Component, OnInit } from '@angular/core';
-import quizz_questions from "../../../assets/data/quizz_questions.json"
+import { QuizzService } from 'src/app/services/quizz.service';
+import { Quizz } from './models/quizz';
 
 @Component({
   selector: 'app-quizz',
   templateUrl: './quizz.component.html',
-  styleUrls: ['./quizz.component.css']
+  styleUrls: ['./quizz.component.css'],
 })
-
 export class QuizzComponent implements OnInit {
+  idCurrentQuiz = 0;
+  quiz: Quizz = {
+    title: '',
+    questions: [],
+    results: {},
+    id: 0,
+  };
 
-  title:string = ""
+  answers: string[] = [];
+  answerSelected: string = '';
 
-  questions:any;
-  questionSelected:any
+  questionIndex: number = 0;
+  questionMaxIndex: number = 0;
 
-  answers:string[] = []
-  answerSelected:string =""
+  finished: boolean = false;
 
-  questionIndex:number =0
-  questionMaxIndex:number=0
+  otherQuizzesTitles: { id: number; title: string }[] = [];
 
-  finished:boolean = false
-
-  constructor() { }
+  constructor(private quizzService: QuizzService) {}
 
   ngOnInit(): void {
-    if(quizz_questions){
-      this.finished = false
-      this.title = quizz_questions.title
+    const id = this.idCurrentQuiz === 0 ? 1 : this.idCurrentQuiz;
+    this.getQuizData(id);
+    this.getQuizzesTitles(id);
+  }
 
-      this.questions = quizz_questions.questions
-      this.questionSelected = this.questions[this.questionIndex]
+  private getQuizzesTitles(idCurrentQuiz: number) {
+    this.quizzService.getQuizzesTitles(idCurrentQuiz).subscribe((res) => {
+      this.otherQuizzesTitles = res;
+    });
+  }
 
-      this.questionIndex = 0
-      this.questionMaxIndex = this.questions.length
+  private getQuizData(index: number): void {
+    this.quizzService.getQuizzData(index).subscribe((quiz) => {
+      this.quiz = quiz;
+      this.finished = false;
+      this.questionIndex = 0;
+      this.questionMaxIndex = quiz.questions ? quiz.questions.length : 0;
+    });
+  }
 
-      console.log(this.questionIndex)
-      console.log(this.questionMaxIndex)
+  onAnswerSelected(answer: string) {
+    this.answers.push(answer);
+    this.nextStep();
+  }
+
+  async nextStep() {
+    this.questionIndex += 1;
+    if (this.questionMaxIndex <= this.questionIndex) {
+      this.finished = true;
+      this.quizzService
+        .getQuizzResult(this.answers, this.idCurrentQuiz)
+        .subscribe((res) => {
+          this.answerSelected = res;
+        });
     }
-
   }
 
-  onAnswerSelected(answer:string){
-    this.answers.push(answer)
-    this.nextStep()
+  onClick($event: number) {
+    this.getQuizData($event);
+    this.getQuizzesTitles($event);
   }
-
-  async nextStep(){
-    this.questionIndex+=1
-
-    if(this.questionMaxIndex > this.questionIndex){
-        this.questionSelected = this.questions[this.questionIndex]
-    }else{
-      const finalAnswer:string = await this.checkResult(this.answers)
-      this.finished = true
-      this.answerSelected = quizz_questions.results[finalAnswer as keyof typeof quizz_questions.results ]
-    }
-  }
-
-  async checkResult(anwsers:string[]){
-    const result = anwsers.reduce((previous, current, i, arr)=>{
-        if(
-          arr.filter(item => item === previous).length >
-          arr.filter(item => item === current).length
-        ){
-          return previous
-        }else{
-          return current
-        }
-    })
-
-    return result
-  }
-
 }

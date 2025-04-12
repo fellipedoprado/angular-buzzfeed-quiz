@@ -5,9 +5,10 @@ import { QuizzHeaderComponent } from './header/quizz-header.component';
 import { QuizzResultsComponent } from './results/quizz-results.component';
 import { QuizzQuestionsComponent } from './questions/quizz-questions.component';
 import { QuizzOptionsComponent } from './options/quizz-options.component';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
-  imports: [CommonModule],
+  imports: [CommonModule, SharedModule],
   declarations: [
     QuizzComponent,
     QuizzHeaderComponent,

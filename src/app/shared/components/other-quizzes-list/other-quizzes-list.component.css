@@ -1,0 +1,24 @@
+.container__menu-bar > ul{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.container__menu-bar > ul > li{
+  margin-right: 20px;
+  list-style: none;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Suaviza a transição de cor */
+
+}
+
+.container__menu-bar > ul > li >a {
+  text-decoration: none; /* Remove o sublinhado do link */
+  color: antiquewhite; /* Cor padrão do texto */
+
+}
+
+.container__menu-bar > ul > li > a:hover {
+  color: #007bff; /* Cor do texto ao passar o mouse (exemplo: azul) */
+}

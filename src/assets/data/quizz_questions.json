@@ -1,55 +1,582 @@
-{
-  "title":"Você seria um heroi ou vilão ?",
-  "questions":[
-    {
-      "id":1,
-      "question": "Qual super poder você escolheria ?",
-      "options":[
-        {"id": 1, "name":"Raios-Lasers", "alias":"A"},
-        {"id": 2, "name":"Voar", "alias":"B"},
-        {"id": 3, "name":"Explodir coisas", "alias":"A"},
-        {"id": 4, "name":"Curar feridas", "alias":"B"},
-        {"id": 5, "name":"Soltar fogo pelas mãos", "alias":"A"}
-      ]
-    },
-    {
-      "id":2,
-      "question": "Quem você salvaria primeiro ?",
-      "options":[
-        {"id": 1, "name":"Crianças", "alias":"A"},
-        {"id": 2, "name":"Idosos", "alias":"A"},
-        {"id": 3, "name":"Não saberia escolher", "alias":"B"}
-      ]
-    },
-    {
-      "id":3,
-      "question": "Qual a sua maior preocupação ao enfretar outro super ser ?",
-      "options":[
-        {"id": 1, "name":"Não destruir prédios", "alias":"B"},
-        {"id": 2, "name":"Socar a cara do inimigo", "alias":"A"},
-        {"id": 3, "name":"Não sujar meu traje", "alias":"A"},
-        {"id": 4, "name":"Não deixar ninguém se ferir", "alias":"B"}
-      ]
-    },
-    {
-      "id":4,
-      "question": "Qual o seu maior foco ?",
-      "options":[
-        {"id": 1, "name":"Ficar rico com poderes", "alias":"A"},
-        {"id": 2, "name":"Salvar a cidade", "alias":"B"}
-      ]
-    },
-    {
-      "id":5,
-      "question": "Qual o seu apelido de super ser ?",
-      "options":[
-        {"id": 1, "name":"O Terrivel", "alias":"A"},
-        {"id": 2, "name":"Amigo da vizinhança", "alias":"B"}
-      ]
+[
+  {
+    "id": 1,
+    "title": "Qual criatura mágica representa sua personalidade?",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          },
+          {
+            "id": 3,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          },
+          {
+            "id": 2,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Mudar a história com palavras",
+            "alias": "B"
+          },
+          {
+            "id": 2,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          },
+          {
+            "id": 3,
+            "name": "Mudar a história com palavras",
+            "alias": "B"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Mudar a história com palavras",
+            "alias": "B"
+          },
+          {
+            "id": 3,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "A": "Dragão – você é poderoso, imponente e protetor.",
+      "B": "Fênix – você se reinventa, é resiliente e cheio de esperança.",
+      "C": "Sereia – você encanta, manipula e se adapta facilmente."
     }
-  ],
-  "results":{
-    "A": "Você muito provavelmente seria um super vilão!",
-    "B": "Você muito provavelmente seria um super Herói!"
+  },
+  {
+    "id": 2,
+    "title": "Se sua vida fosse uma série, qual seria o gênero?",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          },
+          {
+            "id": 2,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          },
+          {
+            "id": 2,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          },
+          {
+            "id": 2,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          },
+          {
+            "id": 3,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          },
+          {
+            "id": 3,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Mudar a história com palavras",
+            "alias": "B"
+          },
+          {
+            "id": 2,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          },
+          {
+            "id": 3,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "A": "Ação – cheia de reviravoltas e cenas intensas.",
+      "B": "Comédia – divertida, caótica e inesperada.",
+      "C": "Drama – profunda, emocional e impactante."
+    }
+  },
+  {
+    "id": 3,
+    "title": "Qual seria seu papel em uma equipe de RPG?",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          },
+          {
+            "id": 2,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Mudar a história com palavras",
+            "alias": "B"
+          },
+          {
+            "id": 3,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          },
+          {
+            "id": 2,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Mudar a história com palavras",
+            "alias": "B"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          },
+          {
+            "id": 2,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          },
+          {
+            "id": 3,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "A": "Tank – o protetor e líder de linha de frente.",
+      "B": "Healer – o apoio confiável que todos contam.",
+      "C": "DPS – o executor rápido e estratégico."
+    }
+  },
+  {
+    "id": 4,
+    "title": "Se você tivesse um poder elemental, qual seria?",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          },
+          {
+            "id": 3,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          },
+          {
+            "id": 2,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          },
+          {
+            "id": 3,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Mudar a história com palavras",
+            "alias": "B"
+          },
+          {
+            "id": 2,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          },
+          {
+            "id": 3,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          },
+          {
+            "id": 3,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "A": "Fogo – impulsivo, intenso e apaixonado.",
+      "B": "Água – calmo, flexível e intuitivo.",
+      "C": "Terra – estável, forte e protetor."
+    }
+  },
+  {
+    "id": 5,
+    "title": "Qual tipo de viajante do tempo você seria?",
+    "questions": [
+      {
+        "id": 1,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 2,
+            "name": "Mudar a história com palavras",
+            "alias": "B"
+          },
+          {
+            "id": 3,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          },
+          {
+            "id": 2,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          },
+          {
+            "id": 3,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Descobrir segredos antigos",
+            "alias": "A"
+          },
+          {
+            "id": 2,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          }
+        ]
+      },
+      {
+        "id": 4,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Mudar a história com palavras",
+            "alias": "B"
+          },
+          {
+            "id": 2,
+            "name": "Criar uma nova versão de si mesmo",
+            "alias": "C"
+          },
+          {
+            "id": 3,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          }
+        ]
+      },
+      {
+        "id": 5,
+        "question": "O que você faria em um universo alternativo?",
+        "options": [
+          {
+            "id": 1,
+            "name": "Ser invencível por um dia",
+            "alias": "A"
+          },
+          {
+            "id": 2,
+            "name": "Fazer piadas em momentos sérios",
+            "alias": "B"
+          },
+          {
+            "id": 3,
+            "name": "Controlar seu destino com um clique",
+            "alias": "C"
+          }
+        ]
+      }
+    ],
+    "results": {
+      "A": "Explorador – fascinado por descobertas e épocas diferentes.",
+      "B": "Guardião – focado em proteger a linha temporal.",
+      "C": "Aventureiro rebelde – ignora regras e cria novas linhas do tempo."
+    }
   }
-}
+]
