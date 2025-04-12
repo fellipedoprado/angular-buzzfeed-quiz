@@ -11,7 +11,7 @@ export class QuizzComponent implements OnInit {
 
   title:string = ""
 
-  questions:any
+  questions:any;
   questionSelected:any
 
   answers:string[] = []
@@ -41,10 +41,9 @@ export class QuizzComponent implements OnInit {
 
   }
 
-  playerChoose(value:string){
-    this.answers.push(value)
+  onAnswerSelected(answer:string){
+    this.answers.push(answer)
     this.nextStep()
-
   }
 
   async nextStep(){
@@ -60,7 +59,6 @@ export class QuizzComponent implements OnInit {
   }
 
   async checkResult(anwsers:string[]){
-
     const result = anwsers.reduce((previous, current, i, arr)=>{
         if(
           arr.filter(item => item === previous).length >
