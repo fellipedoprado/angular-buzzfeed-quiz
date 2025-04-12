@@ -1,27 +1,94 @@
-# ProjetoBuzzfeed
+# 🧠 Angular BuzzFeed Quiz
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.1.2.
+Um projeto interativo de quizzes estilo BuzzFeed, construído com Angular e altamente customizável. Este repositório é um fork estendido e aprimorado de [`felipeAguiarCode/angular-buzzfeed-quizz-clone`](https://github.com/felipeAguiarCode/angular-buzzfeed-quizz-clone), com novas funcionalidades, estrutura modularizada e foco em reusabilidade, escalabilidade e dados dinâmicos.
 
-## Development server
+---
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## ✨ O que este projeto tem a mais?
 
-## Code scaffolding
+Comparado ao repositório base, este projeto implementa:
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### ✅ 1. Suporte a múltiplos quizzes
+- Exibição e navegação entre **vários quizzes distintos**.
+- Cada quiz com título, perguntas e múltiplos resultados personalizados.
 
-## Build
+### ✅ 2. Resultados finais com múltiplas variações
+- Suporte para 2, 3 ou 4 resultados diferentes por quiz.
+- Definição dinâmica via `alias` nas opções de resposta.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### ✅ 3. Dados mockados via JSON externo
+- Estrutura separada entre lógica e conteúdo.
+- Facilidade para expandir ou integrar com APIs reais.
 
-## Running unit tests
+### ✅ 4. Componentização aprimorada
+- Separação de responsabilidades entre `QuestionComponent`, `OptionComponent`, `ResultComponent`, entre outros.
+- Melhor organização e reuso.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### ✅ 5. Modularização de estilos
+- SCSS organizado por componente.
+- Layout limpo e responsivo
 
-## Running end-to-end tests
+---
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+## 🚀 Tecnologias Utilizadas
 
-## Further help
+- Angular 14+
+- TypeScript
+- CSS
+- JSON mock data
+- Angular Router
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+---
+
+## ✅ Funcionalidades
+
+- Seleção de quiz por ID
+- Perguntas com múltiplas opções de resposta
+- Contabilização de escolhas por alias
+- Resultado calculado dinamicamente
+- Exibição clara e estilizada do resultado
+
+---
+
+## 📁 Estrutura do Projeto
+
+```
+src/
+├── app/
+│   ├── components/         → Componentes reativos e reutilizáveis
+│   ├── pages/              → Páginas como QuizPage e ResultPage
+│   ├── models/             → Interfaces tipadas (Quiz, Question, Option)
+│   └── services/           → Serviço para carregar quiz mockado
+├── assets/                 → JSON com dados de quiz
+└── environments/           → Configurações por ambiente
+```
+
+---
+
+## ▶️ Como rodar localmente
+
+```bash
+git clone https://github.com/fellipedoprado/angular-buzzfeed-quiz.git
+cd angular-buzzfeed-quiz
+npm install
+ng serve
+```
+
+Acesse em: [http://localhost:4200](http://localhost:4200)
+
+---
+
+## 🔮 Próximos passos
+
+- Adicionar sistema de pontuação por pergunta
+- Criar um ranking de resultados ou feedback personalizado
+- Criar animações de transição entre perguntas/resultados
+- Permitir compartilhamento do resultado (social share)
+- Adicionar suporte a imagens e vídeos nas opções
+- Criar painel de administração para criar e editar quizzes
+
+---
+
+## 📄 Licença
+
+MIT © [Fellipe do Prado Arruda](https://github.com/fellipedoprado)
