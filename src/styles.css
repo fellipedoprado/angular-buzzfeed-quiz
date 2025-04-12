@@ -9,4 +9,6 @@
 
 body{
   background-color: #1F1147;
+  font-family: 'Roboto', sans-serif; /* Fonte moderna */
+  line-height: 1.6; /* Espaçamento entre linhas */
 }
